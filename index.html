@@ -1,0 +1,38 @@
+{%- from "system/component.html" import component -%}
+
+{% block page %}
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Vloer - Impermo > Ontwerp blauwesteenlook - Impermo</title>
+    <meta name="description" content="Bij Impermo vind je het grootste aanbod tegels van de Benelux. Ook voor natuursteen, parket of laminaat kan je bij ons terecht. Elke dag blij met je keuze.">
+    <meta name="keywords" content="Vloer - Impermo, ontwerp blauwesteenlook, , Impermo, tegels, natuursteen, parket en laminaat , betonlook">
+    {# <meta name="robots" content="index,follow"> #}
+    
+
+    {# <link rel="alternate" hreflang="nl-nl" href="https://www.impermo.nl/nl/vloer-123/">
+    <link rel="alternate" hreflang="en-nl" href="https://www.impermo.nl/en/floor-tiles-123/">
+    <link rel="alternate" hreflang="nl-be" href="https://www.impermo.be/nl/vloer-123/">
+    <link rel="alternate" hreflang="fr-be" href="https://www.impermo.be/fr/carrelages-sol-123/">
+    <link rel="alternate" hreflang="en-be" href="https://www.impermo.be/en/floor-tiles-123/">
+    <link rel="alternate" hreflang="fr-fr" href="https://www.impermo.fr/fr/carrelages-sol-123/"> #}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ rootPath }}/css/pre.css"/>
+    <link rel="stylesheet" href="{{ rootPath }}/css/app.css"/>
+  </head>
+  <body>
+    {% block header %}
+      {% include "./header.html" %}
+    {% endblock %}
+
+    {% include "body.html" %}
+
+
+    {% include './footer.html' %}
+  </body>
+</html>
+{% endblock %}

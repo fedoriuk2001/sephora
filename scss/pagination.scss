@@ -1,0 +1,29 @@
+@import './mq';
+
+.pagination-container {
+  
+}
+
+.pagination {
+  
+
+  &__link {
+    
+
+    &:not(span, .next, .prev):hover {
+    }
+
+  }
+
+  .active {
+    
+  }
+
+  .disabled {
+    
+  }
+
+  .prev, .next {
+  }
+  
+}
