@@ -28,7 +28,7 @@ const dir = {
 };
 
 
-const BASE_URL = '/verbolia-impermo';
+const BASE_URL = '/sephora';
 
 // const getDataForFile = require('./mockData')
 
