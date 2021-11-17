@@ -73,12 +73,6 @@
 }
 }
 
-@media screen and (min-width: 1299px) {
-.product-hit-wrapper {
-    margin-top: 0px;
-}
-}
-
 select, [type=text] {
     font-size: .9375rem;
     font-weight: 500;
@@ -133,7 +127,6 @@ select {
     position: static;
     opacity: 1;
     color: #979797;
-    margin-top: 100px;
 }
 }
 
@@ -198,7 +191,7 @@ select {
 }
 
 @media screen and (min-width: 50em) {
-h2:not(.banner-title) {
+h2:not(.banner-title), h2:not(.product-brand)  {
     font-size: 1.875rem;
     line-height: 1.17;
 }
@@ -633,6 +626,7 @@ a img {
     display: block;
     margin-bottom: 5px;
     line-height: 1.2;
+    font-size: .9375rem;
 }
 
 .bidirectional {
@@ -837,8 +831,48 @@ a.button, .button {
 }
 }
 
+@media screen and (min-width: 50em) {
+    .product-tile:not(.static):hover {
+    box-shadow: 0 6px 20px 1px rgb(32 41 49 / 7%);
+}
+}
+
+@media screen and (min-width: 50em) {
+    .product-tile:not(.static):hover .show-on-hover {
+    display: block;
+}
+}
+
+@media screen and (min-width: 50em) {
+.grid-tile .product-tile:hover .product-info-wrapper, .product-carousel-wrapper .product-tile:hover .product-info-wrapper, .w-product-list .product-tile:hover .product-info-wrapper {
+    bottom: 20px;
+}
+}
+
+@media screen and (min-width: 50em) {
+    .product-tile:not(.static):hover .product-info {
+    background-color: rgba(255,255,255,.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 18px;
+    min-height: 164px;
+}
+}
+
+@media screen and (min-width: 50em) {
+.product-tile:not(.static):hover .hide-on-hover {
+    display: none;
+}
+}
+
 @media screen and (max-width: 1020px) {
     .secondary-content {
         display: none!important;
     }
+}
+
+.product-brand {
+    font-style: normal!important;
 }
