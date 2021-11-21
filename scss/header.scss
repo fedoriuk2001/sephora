@@ -198,7 +198,7 @@
     margin-bottom: 5px;
 }
 
-.search-list ul li a {
+.search-list ul li .hit {
     font-family: avantgardemedium,Arial,sans-serif;
     color: #0a0a0a;
     font-size: .9375rem;
@@ -208,7 +208,7 @@
 }
 
 @media screen and (min-width: 50em) {
-.search-list ul li a {
+.search-list ul li .hit {
     font-size: .8125rem;
 }
 }
@@ -353,7 +353,7 @@ menu>li {
     vertical-align: middle;
 }
 
-.menu>li>a {
+.menu>li>.linkthatareinheader {
     display: block;
     padding: 0.7rem 1rem;
     line-height: 1;
@@ -387,7 +387,7 @@ menu>li {
 }
 }
 
-.is-dropdown-submenu-parent a::after {
+.is-dropdown-submenu-parent .linkthatareinheader::after {
     position: absolute;
     top: 50%;
     right: 5px;
@@ -520,7 +520,7 @@ menu>li {
 }
 }
 
-.menu input, .menu a, .menu button {
+.menu input, .menu .linkthatareinheader, .menu button {
     margin-bottom: 0;
 }
 
@@ -1020,7 +1020,7 @@ a.button.button-secondary, .button.button-secondary {
     margin: 22px 0;
 }
 
-.account-layer .right-side a, .customerservice-account-layer .right-side a {
+.account-layer .right-side .right-side-link, .customerservice-account-layer .right-side .right-side-link {
     height: 25px;
     display: flex;
     align-items: center;
@@ -1202,13 +1202,13 @@ a.button.button-important, a.button.important, .button.button-important, .button
     outline-color: #d50032;
 }
 
-.mini-cart-notification .actions a {
+.mini-cart-notification .actions .actions-link {
     display: flex;
     margin-top: 10px;
 }
 
 @media screen and (min-width: 50em) {
-.mini-cart-notification .actions a {
+.mini-cart-notification .actions .actions-link {
     display: inline-flex;
     width: 300px;
     margin: 10px;
@@ -1568,7 +1568,7 @@ fieldset {
     margin-right: 5px;
 }
 
-.breadcrumb .breadcrumb-element a {
+.breadcrumb .breadcrumb-element .breadcumb-link {
     margin-right: 4px;
     font-family: avantgardebold,Arial,sans-serif;
     font-weight: 600;
@@ -1632,4 +1632,13 @@ fieldset {
     position: relative;
     padding-top: 0px;
 }
+}
+
+.top78 {
+    top: 78px;
+}
+
+.isolationstyle {
+    isolation:isolate;
+    stroke:none;
 }

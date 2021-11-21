@@ -327,6 +327,7 @@
     border: 0;
     padding: 20px 0;
     transition: transform 5s;
+    transition: all 1s 0.1s ease-in;
 }
 
 .reinssurance-accordion .accordion-content a {
@@ -479,7 +480,7 @@ img.lozad {
         line-height: 19px;
     }
     
-    .footer-services-content .block a {
+    .footer-services-content .block .footer-services-links-content {
         color: #fefefe;
     }
     
@@ -494,4 +495,21 @@ img.lozad {
         font-size: 2.1875rem;
         line-height: 1.14;
     }
+    }
+
+    .classred {
+        color: #d50032!important;
+    }
+
+    .padt10padb6 {
+        padding-top: 10px!important; 
+        padding-bottom: 6px!important;
+    }
+
+    .pstyle {
+        color: #fefefe;
+        margin: 0;
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+        font-size: 11px;
     }

@@ -102,10 +102,6 @@
 }
 }
 
-.svg-inline.close-icon {
-    stroke: #000;
-}
-
 @media screen and (min-width: 50em) {
 .ui-dialog-titlebar-close .svg-inline.close-icon {
     width: 100%;
@@ -172,7 +168,7 @@ img[data-src] {
     margin: 10px 0;
 }
 
-#languages-dialog-container .link-underline a {
+#languages-dialog-container .link-underline .link-underline-a {
     text-decoration: underline;
 }
 
@@ -199,10 +195,8 @@ img[data-src] {
     display: none;
 }
 
-@media screen and (max-width: 49.9375em) {
-.svg-inline.close-icon {
-    stroke: #fff;
-}
+.search-popin .svg-inline {
+    stroke: #0a0a0a;
 }
 
 /* Black Button */
@@ -681,4 +675,26 @@ h2:not(.banner-title), .h2:not(.banner-title), h2:not(.product-brand) {
 
 .refinement-rating .icon-rating-off {
     fill: #979797;
+}
+
+.dialogpart {
+    height: auto; 
+    width: 800px; 
+    top: 0px; 
+    left: 372.5px;
+}
+
+.dialogpart2 {
+    width: auto; 
+    min-height: 0px; 
+    max-height: none; 
+    height: auto;
+}
+
+.top196 {
+    top: 196px;
+}
+
+.stylez-index {
+    z-index: 999999;
 }

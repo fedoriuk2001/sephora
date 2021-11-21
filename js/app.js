@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(".selected-site").on("click", function(){
         $(".ui-dialog").toggle();
-        $(".ui-widget-overlay").toggle(); 
+        $(".ui-widget-overlay").toggle();
         window.scrollTo(0, 0);
     });
 
@@ -18,20 +18,28 @@ $(document).ready(function() {
     });
 
     $(".filter-by-btn").on("click", function(){
-        $(".refinements-mobile").toggle(); 
+        if($('.filters-mobile').hasClass('displayno')){
+          $(".filters-mobile").removeClass('displayno');
+        }else{
+          $(".filters-mobile").removeClass('displayno');
+        }
     });
 
     $(".close-icon").on("click", function(){
-        $(".refinements-mobile").toggle(); 
+        if($('.filters-mobile').hasClass('displayno')){
+          $(".filters-mobile").removeClass('displayno');
+        }else{
+          $(".filters-mobile").addClass('displayno');
+        }
         $(".refinement-menu").css({ "display": "none" }); 
     });
 
     $('.open-close-main').on("click", function(){
-        if($('.opened-closed-element').hasClass('refinements-open')){
-            $(".opened-closed-element").removeClass('refinements-open');
-          }else{
-            $(".opened-closed-element").addClass('refinements-open');
-          }
+        if($('.opened-closed-element').hasClass('filters-open')){
+          $(".opened-closed-element").removeClass('filters-open');
+        }else{
+          $(".opened-closed-element").addClass('filters-open');
+        }
     });
 
     $('.header-search').on("click", function(){
@@ -50,6 +58,22 @@ $(document).ready(function() {
           }
     });
     
+    $('.clickfunctionforsearch').on("click", function(){
+      if($('.search-popin').hasClass('active')){
+          $(".search-popin").removeClass('active');
+        }else{
+          $(".search-popin").addClass('active');
+        }
+      });
+
+      $('.clickfunctionforsearch').on("click", function(){
+        if($('.search-popin-overlay').hasClass('active')){
+            $(".search-popin-overlay").removeClass('active');
+          }else{
+            $(".search-popin-overlay").addClass('active');
+          }
+      });
+
     $('.close-search-popin').on("click", function(){
         if($('.search-popin').hasClass('active')){
             $(".search-popin").removeClass('active');
@@ -69,7 +93,7 @@ $(document).ready(function() {
     $(window).scroll(
         {
             previousTop: 0
-        }, 
+        },
         function () {
         var currentTop = $(window).scrollTop();
         if (currentTop < this.previousTop) {

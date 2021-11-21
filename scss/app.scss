@@ -113,11 +113,14 @@ p, .p {
   } 
 }
 
+.classopacity1 {
+  opacity: 1!important;
+}
 
 
 
 @import './header.scss';
 @import './body.scss';
 @import './footer.scss';
-@import './sidebar.scss';
+@import './refinements.scss';
 @import './fonts.scss';
