@@ -2,12 +2,11 @@ const dirTree = require("directory-tree");
 
 function getDataForFile(file) {
   return {
-    pages: dirTree('./src/pages'),
+    pages: dirTree("./src/pages"),
     products: products,
   };
 }
 
-const products = []
-
+const products = [];
 
 module.exports = getDataForFile;

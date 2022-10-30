@@ -1,4 +1,4 @@
-// MEDIA QUERIES EXAMPLE 
+// MEDIA QUERIES EXAMPLE
 // @include xs{
 //   ...css properties
 // }
@@ -9,11 +9,12 @@
 //   ...css properties
 // }
 // @include {
-//   ...css properties 
+//   ...css properties
 // }
 
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -25,8 +26,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: avantgardemedium, Arial, sans-serif;
-  letter-spacing: .5px;
-  font-size: .9375rem;
+  letter-spacing: 0.5px;
+  font-size: 0.9375rem;
   line-height: 1.27;
   font-weight: 400;
   color: #0a0a0a;
@@ -53,7 +54,8 @@ ul {
   margin: 0;
 }
 
-strong, b {
+strong,
+b {
   font-weight: 700;
   line-height: inherit;
 }
@@ -75,8 +77,13 @@ img {
   font-size: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Arial,sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: inherit;
@@ -96,7 +103,8 @@ ul {
   list-style-position: outside;
 }
 
-p, .p {
+p,
+.p {
   margin: 0 0 1.5em;
 }
 
@@ -107,20 +115,19 @@ p, .p {
 }
 
 @media screen and (min-width: 80em) {
-  body, .text {
-      font-size: 1.125rem;
-      line-height: 1.39;
-  } 
+  body,
+  .text {
+    font-size: 1.125rem;
+    line-height: 1.39;
+  }
 }
 
 .classopacity1 {
-  opacity: 1!important;
+  opacity: 1 !important;
 }
 
-
-
-@import './header.scss';
-@import './body.scss';
-@import './footer.scss';
-@import './refinements.scss';
-@import './fonts.scss';
+@import "./header.scss";
+@import "./body.scss";
+@import "./footer.scss";
+@import "./refinements.scss";
+@import "./fonts.scss";
